@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintZ - About</title>
+    <link rel="stylesheet" href="../project css/project-about.css">
+</head>
+    <body>
+        <!-- Navigation bar -->
+        <div class="navigation-bar">
+            <div class="nav">
+                <center>
+                    <table width="80%">
+                        <tr> 
+                            <td><a href="project.html">Home</a></td>
+                            <td><a href="project-product.html">Product</a></td>
+                            <td><a href="project-about.html">About</a></td>
+                            <td><a href="project-research.html">Research</a></td>
+                            <td><a href="project-blog.html">Blog</a></td>
+                            <td><a href="project-form.html">Log In</a></td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+
+        <p>
+            PrintZ is a printing machinery brand that closes the deal of<br> innovation and engineering <br>to potray the documentation of article and image .<br>
+            Each of us are represented by four ink plates used in color printing CMYK.
+        </p>
+
+        <!--INTERNAL LINK FOR FEEDBACK FORM-->
+        <h1><a href="#form">FEEDBACK FORM</a></h1>
+
+        <table class="infotable">
+            <tr>
+                <td>
+                    <img src="../project images/black.png" height="300px" width="300px">
+                </td>
+
+                <td>
+                    <a href="Anush.html">Anush</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../project images/magenta.png" height="300px" width="300px"> 
+                </td>
+
+                <td>
+                    <a href="Rima.html">Rima</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../project images/yellow.png" height="300px" width="300px">
+                </td>
+
+                <td>
+                    <a href="Grishma.html">Grishma</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="../project images/cyan.png" height="300px" width="300px"> 
+                </td>
+
+                <td>
+                    <a href="Nitesh.html">Nitesh</a>
+                </td>
+            </tr>
+        </table>
+    
+        <form class="form">
+            <h1 id="form">FeedBack Form</h1>
+            <label>
+                <input type="email" placeholder="Enter Email" id="email">
+            </label>
+            <br>
+            <label>
+                <textarea placeholder="Enter Feedback" id="password"></textarea>
+            </label>
+            <br>
+            <label>
+                <button type="submit" id="submit">Sign Up</button>
+            </label>
+        </form>
+    
+        <footer>
+            <p>ALL RIGHTS RESERVED</p>
+            <p>&copy 2024  PRINTZ</p>
+        </footer>
+        <!-- javascript for the feedback form to display suitable message -->
+        <script>
+            document.addEventListener("submit",function(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if(email == "" || password == ""){
+                    alert("Fill out all the details");
+                    }
+
+                    else{
+                    alert("Feedback Received");
+                }
+            })
+
+        </script>
+    
+    </body>
+</html>

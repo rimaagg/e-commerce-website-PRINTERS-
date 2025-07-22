@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Printz</title>
+        <link rel="stylesheet" href="../project css/project-form.css">
+    </head>
+    <body>
+
+        <div class="navigation-bar">
+            <div class="nav">
+                <center>
+                    <table width="80%">
+                        <tr>
+                            <td><a href="project.html">Home</a></td>
+                            <td><a href="project-product.html">Product</a></td>
+                            <td><a href="project-about.html">About</a></td>
+                            <td><a href="project-research.html">Research</a></td>
+                            <td><a href="project-blog.html">Blog</a></td>
+                            <td><a href="project-form.html">Log In</a></td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+
+        <form class="form">
+            <h1>Log In</h1>
+            <label>
+                <input type="email" placeholder="Enter Email" id="email">
+            </label>
+            <br>
+            <label>
+                <input type="password" placeholder="Password" id="password">
+            </label>
+            <br>
+            <label>
+                <button type="submit" id="submit">Sign Up</button>
+            </label>
+        </form>
+        <footer>
+            <p>ALL RIGHTS RESERVED</p>
+            <p>&copy 2024  PRINTZ</p>       
+        </footer>
+        <!-- javascript for Log In page . Displays a pop-up message -->
+        <script>
+            document.addEventListener("submit",function(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+
+                if(email == "" || password == ""){
+                    alert("Fill out all the details");
+                }
+
+                else{
+                    alert("Logged In");
+                }
+            })
+
+        </script>
+
+    </body>
+</html>
